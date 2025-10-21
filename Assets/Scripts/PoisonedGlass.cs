@@ -26,7 +26,7 @@ public class DrinkRoulette : MonoBehaviour
     [Header("Buttons")]
     public GameObject drinkButton;
     public GameObject passButton;
-    public GameObject restartButton; // assign in Inspector
+    public GameObject restartButton;
 
     [Header("AI Settings")]
     [Tooltip("How many seconds the AI waits before acting")]
@@ -206,7 +206,6 @@ public class DrinkRoulette : MonoBehaviour
         return false;
     }
 
-    // Restart function for button
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
